@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Saim's Contact form</title>
+        <!--CSS FILE LINK-->
+        <link rel="stylesheet" href="/style.css">
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <div class="contact-container">
+            <form action="https://api.web3forms.com/submit" method="POST" class="content-left">
+                <div class="content-left-title">
+                    <h2>Get in Touch</h2>
+                    <hr>
+                </div>
+                <input type="hidden" name="access_key" value="3abee05d-5550-4330-91e4-124585e7fb59">
+                <input type="text" name="name" placeholder="Your Name"
+                    class="contact-inputs" required>
+                <input type="email" name="email" placeholder="Your Email"
+                    class="contact-inputs" required>
+                <textarea name="message" placeholder="Your Message"
+                    class="contact-inputs" required></textarea>
+                <button type="submit">Submit <img src="/media/arrow_icon.png"
+                        alt></button>
+            </form>
+            <div class="content-right">
+                <img src="/media/img.png" alt width="584px">
+            </div>
+        </div>
+    </body>
+</html>

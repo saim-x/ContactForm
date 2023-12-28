@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #654ea3;
+    background: -webkit-linear-gradient(to right,#eaafc8,#654ea3);
+    background: linear-gradient(to right,#eaafc8,#654ea3);
+}
+
+.contact-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.content-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.content-left-title h2{
+    font-weight: 800;
+    font-size: 40px;
+    margin-bottom: 5px;
+    color: #654ea3;
+    transition: 0.4s ease 0.1s;
+}
+
+.content-left-title hr{
+    border: none;
+    width: 120px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: #916df1;
+    margin-bottom: 20px;
+    transition: 0.3s  0.1s;
+}
+
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #343637;
+    border-radius: 50px;
+}
+
+.content-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contact-inputs:focus{
+    border: 2px solid #916df1;
+}
+
+.contact-inputs::placeholder{
+    font-family: 'Poppins', sans-serif;
+    color: lightgray;
+}
+
+.content-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #654ea3, #916df1);
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition:  0.5s  0.3s;    
+}
+
+.content-left button img{
+    height: 15px;
+}
+
+.content-right img{
+    width: 800px;
+    transition: 0.5s;
+
+}
+
+@media(max-width:800px){
+    .contact-inputs{
+        width: 80vw;
+    }
+    .content-right{
+        display: none;
+    }
+}
+
+.content-left button:hover{
+    text-transform: uppercase;
+    background: linear-gradient(270deg, #292929, #000000);
+    border-radius: 0px;
+    border: 2px solid #fff;
+    transform: scale(1.1);
+}
+
+.content-left-title h2:hover{
+    color: #292929;
+    cursor:progress;
+    transform: scale(1.1);
+    text-transform: capitalize;
+}
+
+.content-left-title hr:hover{
+    width: 200px;
+}
+
+.content-right img:hover{
+    transform: scale(1.1);
+}
